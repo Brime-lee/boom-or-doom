@@ -1,7 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap'); */
 @font-face {
   font-family: 'Rubik';
-  src: url('../fonts/RubikWetPaint-Regular.ttf');
+  src: url('./RubikWetPaint-Regular.ttf');
 }
 
 :root {
