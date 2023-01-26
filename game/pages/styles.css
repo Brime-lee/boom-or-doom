@@ -12,7 +12,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background: var(--deep-green-red-gradient),
-    url('./imgs/bg.jpg') no-repeat center center fixed;
+    url('../imgs/bg.jpg') no-repeat center center fixed;
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
