@@ -19,7 +19,7 @@ A play to earn Web3 runner game that rewards tokens and NFTs
 
 #
 
-**Visit Live DApp to [Play Hustle](https://hustle.vercel.app)**.
+**Visit Live DApp to [Play Hustle](boom-or-doom-6u94.vercel.app)**.
 
 ### **`Roadmap & future development`**
 
