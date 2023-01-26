@@ -1,0 +1,288 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap'); */
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/RubikWetPaint-Regular.ttf');
+}
+
+:root {
+  /* 
+  ===== COLOURS ====== 
+  */
+
+  --white: hsl(0, 0%, 100%);
+  --antique-white: hsl(35, 80%, 90%);
+  --light-grey: hsl(215, 10%, 60%);
+  --dark-grey: hsl(215, 10%, 40%);
+  --sky-blue: hsl(184, 100%, 30%);
+  --light-green: hsla(111, 97%, 49%, 0.75);
+  --deep-light-green: hsla(111, 97%, 49%, 0.85);
+  --dark-navy-blue: rgba(1, 8, 20, 0.75);
+  --transparent-navy-blue: hsla(216, 66%, 10%, 0.75);
+  --transparent-deep-green: hsl(167, 90%, 10%, 0.75);
+  --deep-green: hsl(167, 90%, 10%, 0.8);
+  --deeper-green: hsl(167, 90%, 10%, 0.95);
+  --green-blue-gradient: linear-gradient(
+    -45deg,
+    var(--light-green),
+    var(--sky-blue)
+  );
+  --sky-blue-black-gradient: linear-gradient(
+    -200deg,
+    hsl(184, 100%, 30%, 0.75),
+    hsl(160, 94%, 43%, 0.75)
+  );
+  --yellow-green-gradient: linear-gradient(
+    -200deg,
+    hsl(157, 65%, 47%, 0.75),
+    hsl(160, 94%, 43%, 0.75)
+  );
+  --sky-blue-green-gradient: linear-gradient(
+    -200deg,
+    hsl(184, 100%, 30%, 0.75),
+    hsla(111, 97%, 49%, 0.75),
+    hsl(184, 100%, 30%, 0.75)
+  );
+
+  --deep-green-red-gradient: linear-gradient(
+    to bottom right,
+    rgba(1, 75, 15, 0.5),
+    rgba(230, 45, 5, 0.6)
+  );
+  --btn-deep-green-red-gradient: linear-gradient(
+    to bottom right,
+    rgba(1, 75, 15, 0.85),
+    rgba(230, 45, 5, 0.85)
+  );
+  --deep-red-orange-gradient: linear-gradient(
+    to bottom,
+    rgba(140, 250, 5, 0.782),
+    rgba(230, 45, 5, 0.6)
+  );
+
+  --input-gradient: linear-gradient(
+    to top left,
+    hsl(184, 100%, 30%, 0.75),
+    hsla(111, 97%, 49%, 0.75),
+    hsl(184, 100%, 30%, 0.75)
+  );
+  --blue-black-gradient: linear-gradient(
+    to bottom,
+    rgba(1, 105, 112, 0.75),
+    rgba(4, 157, 106, 0.75)
+  );
+  --dark-blue-black-gradient: linear-gradient(
+    to bottom left,
+    rgba(1, 65, 72, 0.75),
+    rgba(4, 107, 66, 0.75)
+  );
+  /*
+  ======= FONTS ======= FONTS
+  */
+  --font-rubik-wet-paint: 'Rubik', cursive;
+}
+
+/*
+======= UNIVERSAL STYLES ======= 
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: var(--deep-green-red-gradient),
+    url('../imgs/wodbackground.webp') no-repeat center center fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-size: clamp(0.75rem, 7.5vw, 1rem);
+  letter-spacing: 0.1rem;
+  font-family: var(--font-rubik-wet-paint);
+  color: var(--antique-white);
+}
+h1,
+h2 {
+  background: -webkit-linear-gradient(
+    hsla(111, 97%, 49%, 0.75) 20%,
+    hsla(25, 97%, 49%, 0.75),
+    hsla(0, 98%, 49%, 0.933) 90%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+
+button {
+  font-family: var(--font-rubik-wet-paint);
+  background: transparent;
+  color: var(--antique-white);
+  border: none;
+  transition: 0.3s ease-out;
+  font-size: clamp(0.75rem, 7.5vw, 1rem);
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+button:disabled {
+  -webkit-tap-highlight-color: transparent;
+}
+button:hover {
+  /* background: var(--blue-black-gradient); */
+  color: var(--antique-white);
+}
+input {
+  caret-color: transparent;
+  border-radius: 0.5rem;
+  outline: none;
+  user-select: none;
+}
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--antique-white);
+  margin-inline: 1rem;
+  /* overflow: hidden; */
+}
+
+.dow-text {
+  padding-inline: 1rem;
+}
+.dow-text h1 {
+  padding-bottom: 0.5rem;
+  font-size: clamp(1.5rem, 20vw, 4rem);
+}
+.dead-text {
+  background: linear-gradient(
+    hsla(25, 97%, 49%, 0.75) 40%,
+    hsla(0, 98%, 49%, 0.933) 10% hsla(111, 97%, 49%, 0.75) 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dow-text-border {
+  background: var(--sky-blue-green-gradient);
+  height: 1.5px;
+  width: 100%;
+  margin: 1rem auto;
+}
+.dow-text-or {
+  text-transform: uppercase;
+}
+.dow-text .dow-text-or::before,
+.dow-text-or::after {
+  background: var(--sky-blue-green-gradient);
+  content: '';
+  display: inline-block;
+  height: 1.5px;
+  position: relative;
+  vertical-align: middle;
+  width: 40%;
+}
+/* .dow-text .dow-text-or::before {
+  right: -2.5%;
+  margin-right: -50%;
+}
+.dow-text .dow-text-or::after {
+  left: -2.5%;
+  margin-left: -50%;
+} */
+main button {
+  background: transparent;
+  font-size: clamp(0.75rem, 5.5vw, 1.2rem);
+}
+main button:hover {
+  color: var(--light-green);
+}
+.main-menu-links {
+  display: grid;
+  margin-block: 1rem;
+}
+.menu-button {
+  margin-bottom: 1rem;
+}
+
+.start-game:disabled {
+  color: var(--antique-white);
+  -webkit-tap-highlight-color: transparent;
+}
+.start-game:hover:disabled {
+  color: #ccc;
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  font-size: clamp(0.5rem, 4vw, 0.65rem);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--antique-white);
+}
+
+/* ========================*/
+/* ==== SMALLEST SCREENS ==== */
+/* ========================*/
+@media (max-width: 300px) {
+  .dow-text h1 {
+    font-size: clamp(2rem, 20vw, 3rem);
+  }
+  main button {
+    font-size: clamp(0.85rem, 7.5vw, 0.9rem);
+  }
+  footer {
+    font-size: clamp(0.5rem, 3.5vw, 0.6rem);
+  }
+}
+/* ========================*/
+/* ==== SMALLER SCREENS ==== */
+/* ========================*/
+@media (max-width: 380px) and (min-width: 300px) {
+  .dow-text h1 {
+    font-size: clamp(2rem, 20vw, 3.5rem);
+  }
+  main button {
+    font-size: clamp(0.75rem, 10vw, 1rem);
+  }
+}
+/* ========================*/
+/* ==== SMALLER SCREENS ==== */
+/* ========================*/
+@media (max-width: 599px) {
+  .menu-button {
+    font-size: clamp(1rem, 15vw, 1.5rem);
+  }
+}
+/* ========================*/
+/* ==== LARGE SCREENS ==== */
+/* ========================*/
+@media (min-width: 600px) {
+  .dow-text h1 {
+    font-size: clamp(3.5rem, 25vw, 5rem);
+  }
+  .menu-button {
+    font-size: clamp(1.2rem, 15vw, 1.75rem);
+  }
+  footer {
+    font-size: clamp(0.5rem, 5vw, 0.75rem);
+  }
+}

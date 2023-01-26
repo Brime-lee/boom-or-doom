@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   user-select: none;
 }
@@ -9,6 +11,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background: var(--deep-green-red-gradient),
+    url('./imgs/bg.jpg') no-repeat center center fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-size: clamp(0.75rem, 7.5vw, 1rem);
+  letter-spacing: 0.1rem;
+  font-family: var(--font-rubik-wet-paint);
+  color: var(--antique-white);
 }
 
 .game {
@@ -19,13 +31,22 @@ body {
 button {
   position: fixed;
   margin-top: 1px;
+  /* margin: 2rem auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: var(--sky-blue-black-gradient);
+  color: var(--antique-white);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .nftTotalScore {
   position: absolute;
   font-size: 3vmin;
   right: 30vmin;
-  top: 4vmin;
+  top: 6vmin;
 }
 
 .gweiTotalScore {
@@ -53,24 +74,22 @@ button {
   position: absolute;
   font-size: 3vmin;
   left: 1vmin;
-  top: 5vmin;
+  top: 9vmin;
 }
 
 .button3 {
   position: absolute;
   font-size: 3vmin;
   left: 1vmin;
-  top: 10vmin;
+  top: 17vmin;
 }
-
 
 .score1 {
   position: absolute;
   font-size: 3vmin;
   right: 1vmin;
-  top: 4vmin;
+  top: 6vmin;
 }
-
 
 .start-screen {
   position: absolute;
@@ -89,7 +108,7 @@ button {
   position: absolute;
   width: 300%;
   bottom: 0;
-  left: calc(var(--left) * 1%)
+  left: calc(var(--left) * 1%);
 }
 
 .player {
