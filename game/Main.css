@@ -94,7 +94,7 @@ a {
 }
 body {
   background: var(--deep-green-red-gradient),
-    url('../imgs/wodbackground.webp') no-repeat center center fixed;
+    url('./wodbackground.webp') no-repeat center center fixed;
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
