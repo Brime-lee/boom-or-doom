@@ -4,7 +4,7 @@ Grandida Solo-Project Submission
 
 A play to earn Web3 runner game that rewards tokens and NFTs
 
-<!-- <img src="./asset/bod.png" width="768" height="480"> -->
+<img src="./game/homescreen.png" width="768" height="480">
 
 ## About
 
