@@ -38,10 +38,10 @@ export function setPlayerLose() {
 }
 
 function handleRun(delta, speedScale) {
-  if (isJumping) {
-    playerElem.src = './playerJumps.png';
-    return;
-  }
+  // if (isJumping) {
+  //   playerElem.src = './playerJumps.png';
+  //   return;
+  // }
 
   if (currentFrameTime >= FRAME_TIME) {
     playerFrame = (playerFrame + 1) % PLAYER_FRAME_COUNT;
