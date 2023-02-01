@@ -11,7 +11,8 @@ A play to earn Web3 runner game that rewards tokens and NFTs
           Hustle is a play-to-earn decentralised game where players
           can earn tokens and NFTs as reward for playing the game.
 
-          Hustle is a infinite runner game where the player tend to gather NFTs while running and avoiding obstacles. The higher the number of NFTs gathhered the higher the reward.
+          Hustle is a infinite runner game where the player tend to gather NFTs while running and avoiding obstacles. 
+          The higher the number of NFTs gathhered the higher the reward.
 
           Hustle is beginner friendly and does not require players to have
           any technical knowledge as it seeks to improve adoption of Web3 and
@@ -19,7 +20,6 @@ A play to earn Web3 runner game that rewards tokens and NFTs
 
 #
 
-**Visit Live DApp to [Play Hustle](hustlenft.netlify.app)**.
 
 ### **`Roadmap & future development`**
 
