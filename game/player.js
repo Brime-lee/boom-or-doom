@@ -42,7 +42,14 @@ function handleRun(delta, speedScale) {
     playerElem.src = './playerJumps.png';
     return;
   }
+  let previousImageNumber = 0;
 
+  // if (currentFrameTime >= FRAME_TIME) {
+  //   let currentImageNumber = previousImageNumber === 1 ? 2 : 1;
+  //   playerElem.src = `./playerRuns${currentImageNumber}.png`;
+  //   previousImageNumber = currentImageNumber;
+  //   currentFrameTime -= FRAME_TIME;
+  // }
   // if (currentFrameTime >= FRAME_TIME) {
   //   playerFrame = (playerFrame + 1) % PLAYER_FRAME_COUNT;
   //   playerElem.src = `./playerRuns${playerFrame}.png`;
