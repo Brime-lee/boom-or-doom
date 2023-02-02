@@ -5,32 +5,27 @@ Grandida Solo-Project Submission
 A play to earn Web3 runner game that rewards tokens and NFTs
 
 <img src="./game/homescreen.png" width="768" height="480">
+<img src="./game/playScreen.png" width="768" height="480">
 
-## About
+Checkout the Live demo @ [Hustle](https://hustlenft.netlify.app) :sparkles:
 
-          Hustle is a play-to-earn decentralised game where players
-          can earn tokens and NFTs as reward for playing the game.
+## Overview
 
-          Hustle is a infinite runner game where the player tend to gather NFTs while running and avoiding obstacles. 
-          The higher the number of NFTs gathhered the higher the reward.
-
-          Hustle is beginner friendly and does not require players to have
-          any technical knowledge as it seeks to improve adoption of Web3 and
-          give users the opportunity to earn while having fun.
+         Hustle is a decentralized play-to-earn game that rewards players with tokens and NFTs. Players navigate through obstacles and collect NFTs to earn rewards. The game is designed to be beginner-friendly and accessible to all users, with no technical knowledge required. Join the rapidly growing decentralized gaming community with Hustle.
 
 #
 
+### **`Future Development`**
 
-### **`Roadmap & future development`**
+Hustle is a continuously developed game with plans to add:
 
-Hustle is a continuous development game so the listed features below will be added:
-
-1. different levels in form of difficulties willbe added.
-2. different Location as per game interface of the runner will be implemented.
-3. Obstacles that can attack (i.e dynamic obstacle and not just stationary).
+1. Different levels with varying difficulties
+2. Different locations in the game interface
+   .
+3. Dynamic obstacles with the addition of a defense shield that can be purchased with NFTs won by the player.
 4. While while attacking obstacles are added, A defense shield will be added to the runner which willbe bought with a particular amount of NFTs won by users.
 
-### **`Tech Stack`**
+## **`Tech Stack`**
 
 ## Technology Stack & Dependencies
 
@@ -40,6 +35,8 @@ Hustle is a continuous development game so the listed features below will be add
 - [NodeJS](https://nodejs.org/en/) To install Dependencies
 - [Hardhat](https://hardhat.org/) Ethereum development environment
 - [Ethers.js](https://docs.ethers.io/v5/) To interact with the blockchain
+
+### Deployment Instructions
 
 ### 1. Clone/Download the Repository
 
@@ -71,4 +68,8 @@ npx hardhat run scripts/deployRunToken.js --network mumbai
 
 ### 5. Provide the smart contract addresses in blockchain.js file
 
-Built with intentionality by [@Brime-lee](https://github.com/Brime-lee) :sparkles:
+## Credits
+
+Developed with intentionality by [@Brime-lee](https://github.com/Brime-lee) :sparkles:
+
+Icons used in the game are sourced from [Flaticons](https://www.flaticon.com) :sparkles:
