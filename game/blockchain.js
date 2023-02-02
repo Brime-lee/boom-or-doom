@@ -2,17 +2,6 @@ let provider = new ethers.providers.Web3Provider(window.ethereum);
 let signer;
 const metamaskConnectElem = document.querySelector('[data-metamask-connect ]');
 
-// async function connectMetamask() {
-//   await provider.send('eth_requestAccounts', []);
-//   signer = await provider.getSigner();
-//   const getPlayerlayerAddress = await signer.getAddress();
-//   const playerAddress =
-//     getPlayerlayerAddress.slice(0, 6) +
-//     '...' +
-//     getPlayerlayerAddress.slice(38, 42);
-//   metamaskConnectElem.textContent = playerAddress;
-// }
-
 async function connectMetamask() {
   if (signer) {
     // disconnect if already connected
@@ -51,6 +40,7 @@ async function claimTokens() {
   await runTokenContract
     .connect(signer)
     .mintTokens(signer.getAddress(), amountToClaim.toString());
+  window.totalGweiScore = 0;
 }
 
 async function claimNft() {
@@ -68,4 +58,5 @@ async function claimNft() {
     return alert('No tokens to claim as the totalNFTScore is 0.');
   }
   await nftContract.connect(signer).mint(window.totalNFTScore.toString());
+  window.totalNFTScore = 0;
 }
