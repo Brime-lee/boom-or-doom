@@ -1,6 +1,10 @@
 let provider = new ethers.providers.Web3Provider(window.ethereum);
 let signer;
 const metamaskConnectElem = document.querySelector('[data-metamask-connect ]');
+const gweiTotalScoreEleme = document.querySelector('[data-wei-total-score]');
+const nftTotalScoreElem = document.querySelector('[data-nft-total-score]');
+const nftScoreElem = document.querySelector('[data-nft-score ]');
+const scoreElem = document.querySelector('[data-score]');
 
 async function connectMetamask() {
   if (signer) {
@@ -41,6 +45,9 @@ async function claimTokens() {
     .connect(signer)
     .mintTokens(signer.getAddress(), amountToClaim.toString());
   window.totalGweiScore = 0;
+  gweiTotalScoreEleme.textContent = `Wei total score: 0`;
+  scoreElem.textContent = `Gwei score: 0`;
+  alert('Success: Token Claimed.');
 }
 
 async function claimNft() {
@@ -59,4 +66,8 @@ async function claimNft() {
   }
   await nftContract.connect(signer).mint(window.totalNFTScore.toString());
   window.totalNFTScore = 0;
+
+  nftTotalScoreElem.textContent = `NFT total score: 0`;
+  nftScoreElem.textContent = `NFT score: 0`;
+  alert('Success: NFT claimed.');
 }

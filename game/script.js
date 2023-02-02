@@ -106,7 +106,7 @@ function handleLose() {
   window.totalNFTScore += nftScore;
 
   nftTotalScoreElem.textContent = `NFT total score: ${window.totalNFTScore}`;
-  gweiTotalScoreEleme.textContent = `Wei total score ${window.totalGweiScore}`;
+  gweiTotalScoreEleme.textContent = `Wei total score: ${window.totalGweiScore}`;
 
   nftScore = 0;
   nftScoreElem.textContent = `nft score: ${nftScore}`;
