@@ -43,11 +43,16 @@ function handleRun(delta, speedScale) {
     return;
   }
 
+  // if (currentFrameTime >= FRAME_TIME) {
+  //   playerFrame = (playerFrame + 1) % PLAYER_FRAME_COUNT;
+  //   playerElem.src = `./playerRuns${playerFrame}.png`;
+  //   currentFrameTime -= FRAME_TIME;
+  // }
   if (currentFrameTime >= FRAME_TIME) {
-    playerFrame = (playerFrame + 1) % PLAYER_FRAME_COUNT;
-    playerElem.src = `./playerRuns${playerFrame}.png`;
+    playerElem.src = `./playerRuns${Math.floor(Math.random() * 2) + 1}.png`;
     currentFrameTime -= FRAME_TIME;
   }
+
   currentFrameTime += delta * speedScale;
 }
 
